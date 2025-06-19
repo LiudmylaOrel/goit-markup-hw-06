@@ -555,9 +555,6 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    /* display: flex;
-    flex-direction: column;
-    gap: 16px; */
 }
 
 .footer-input {
@@ -597,8 +594,6 @@ text-align: center;
     min-width: 165px;
     height: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
 }
 
@@ -631,8 +626,8 @@ text-align: center;
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -640,7 +635,7 @@ text-align: center;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -791,6 +786,8 @@ textarea::placeholder {
     letter-spacing: 0.04em;
     color: #8e8f99;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
 }
 
 .check-element {
@@ -802,6 +799,7 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    flex-shrink: 0;
 }
 
 .modal-check:checked + .check-text .check-element {
@@ -824,7 +822,7 @@ textarea::placeholder {
     }
 
     .team .container {
-        max-width: 584px;
+        max-width: 552px;
     }
 
     .header-logo {
@@ -957,10 +955,11 @@ textarea::placeholder {
         max-width: 584px;
         display: flex;
         align-items: baseline;
+        justify-content: start;
     }
 
     .footer {
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -977,6 +976,10 @@ textarea::placeholder {
         text-align: unset;
     }
 
+    .footer-media-container {
+        margin-bottom: 0;
+    }
+
     .footer-logo-container {
         margin-right: 24px;
     }
@@ -985,16 +988,28 @@ textarea::placeholder {
         text-align: start;
     }
 
+    .footer-label {
+        display: flex;
+        gap: 16px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
     .footer-form {
         display: flex;
         gap: 24px;
-        }
+    }
 
-    .footer-lable {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        gap: 16px;
+    .footer-button {
+        margin: 0;
+    }
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
     }
     
     .mobil-menu {
@@ -1114,6 +1129,7 @@ textarea::placeholder {
 
     .footer-logo-container {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-media-container {
@@ -1122,10 +1138,6 @@ textarea::placeholder {
 
     .footer-label {
         flex-direction: column;
-    }
-
-    .footer-input{
-        width: 264px;
     }
 
     .mobil-menu {
