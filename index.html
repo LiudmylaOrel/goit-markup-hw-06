@@ -20,7 +20,6 @@
     />
   </head>
   <body>
-    
     <!-- Header -->
     <header class="header">
       <div class="container header-container">
@@ -54,21 +53,27 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="burger-btn"><svg class="burger-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
-        </svg></button>
+        <button type="button" class="burger-btn">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
 
       <!--MOBIL MENU-->
-      <div class="mobil-menu">
+      <div class="mobil-menu is-open">
         <div class="container mobil-menu-container">
           <button type="button" class="mobil-menu-close">
-            <svg class="mobil-close-icon" width="8" height="8" ><use href="./images/icons.svg#icon-close"></use></svg>
+            <svg class="mobil-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
           </button>
           <nav class="mobil-menu-nav">
             <ul class="mobil-menu-list">
               <li class="mobil-menu-item">
-                <a class="mobil-menu-link" href="./index.html">Studio</a>
+                <a class="mobil-menu-link mobil-color" href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="mobil-menu-item">
                 <a class="mobil-menu-link" href="">Portfolio</a>
@@ -81,13 +86,15 @@
           <address class="mobil-address">
             <ul class="mobil-address-list">
               <li class="mobil-address-item">
-                <a class="mobil-address-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                <a
+                  class="mobil-address-link mobil-color"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="mobil-address-item">
-                <a class="mobil-address-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+                <a class="mobil-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -96,28 +103,28 @@
             <ul class="mobil-list-icons">
               <li class="mobil-item-icons">
                 <a href="" class="link-icons">
-                  <svg class="mobil-icons" width="16" height="16">
+                  <svg class="mobil-icons" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobil-item-icons">
                 <a href="" class="link-icons">
-                  <svg class="mobil-icons" width="16" height="16">
+                  <svg class="mobil-icons" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobil-item-icons">
                 <a href="" class="link-icons">
-                  <svg class="mobil-icons" width="16" height="16">
+                  <svg class="mobil-icons" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobil-item-icons">
                 <a href="" class="link-icons">
-                  <svg class="mobil-icons" width="16" height="16">
+                  <svg class="mobil-icons" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -128,73 +135,72 @@
       </div>
     </header>
     <main>
+      <!--Hero Section-->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button class="hero-button btn" type="button">Order Service</button>
+        </div>
+      </section>
 
-    <!--Hero Section-->
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button btn" type="button">Order Service</button>
-      </div>
-    </section>
+      <!--Features Section-->
+      <section class="features section">
+        <div class="container">
+          <h2 class="visually-hidden">Our goals</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <div class="feature-icons-cover">
+                <svg class="features-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Strategy</h3>
+              <p class="features-item-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="feature-icons-cover">
+                <svg class="features-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Punctuality</h3>
+              <p class="features-item-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="feature-icons-cover">
+                <svg class="features-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Diligence</h3>
+              <p class="features-item-text">
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="feature-icons-cover">
+                <svg class="features-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Technologies</h3>
+              <p class="features-item-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!--Features Section-->
-    <section class="features section">
-      <div class="container">
-        <h2 class="visually-hidden">Our goals</h2>
-        <ul class="features-list">
-          <li class="features-item">
-            <div class="feature-icons-cover">
-              <svg class="features-icons" width="64" height="64">
-                <use href="./images/icons.svg#icon-antenna-1"></use>
-              </svg>
-            </div>
-            <h3 class="features-subtitle">Strategy</h3>
-            <p class="features-item-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="feature-icons-cover">
-              <svg class="features-icons" width="64" height="64">
-                <use href="./images/icons.svg#icon-clock-1"></use>
-              </svg>
-            </div>
-            <h3 class="features-subtitle">Punctuality</h3>
-            <p class="features-item-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="feature-icons-cover">
-              <svg class="features-icons" width="64" height="64">
-                <use href="./images/icons.svg#icon-diagram-1"></use>
-              </svg>
-            </div>
-            <h3 class="features-subtitle">Diligence</h3>
-            <p class="features-item-text">
-              Research and confirm brands with the strongest digital growth
-              opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="feature-icons-cover">
-              <svg class="features-icons" width="64" height="64">
-                <use href="./images/icons.svg#icon-astronaut-1"></use>
-              </svg>
-            </div>
-            <h3 class="features-subtitle">Technologies</h3>
-            <p class="features-item-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!--Team Section-->
+      <!--Team Section-->
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -387,21 +393,33 @@
             <li class="portfolio-item">
               <div class="portfolio-cover">
                 <picture>
-                  <source 
-                  srcset="./images/img-portfolio-1.jpg 1x, ./images/img-portfolio-1-2x.jpg 2x" 
-                  media="(min-width: 1158px)">
                   <source
-                  srcset="./images/img-portfolio-tab-1.jpg 1x, ./images/img-portfolio-tab-1-2x.jpg 2x"
-                  media="(min-width: 768px)">
+                    srcset="
+                      ./images/img-portfolio-1.jpg    1x,
+                      ./images/img-portfolio-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
                   <source
-                  srcset="./images/img-portfolio-mob-1.jpg 1x, ./images/img-portfolio-mob-1-2x.jpg 2x"
-                  media="(max-width: 767px)">
+                    srcset="
+                      ./images/img-portfolio-tab-1.jpg    1x,
+                      ./images/img-portfolio-tab-1-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob-1.jpg    1x,
+                      ./images/img-portfolio-mob-1-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  class="portfolio-image"
-                  src="./images/img-portfolio-mob-1.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/img-portfolio-mob-1.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
                 </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -417,21 +435,33 @@
             <li class="portfolio-item">
               <div class="portfolio-cover">
                 <picture>
-                  <source 
-                  srcset="./images/img-portfolio-2.jpg 1x, ./images/img-portfolio-2-2x.jpg 2x" 
-                  media="(min-width: 1158px)">
                   <source
-                  srcset="./images/img-portfolio-tab-2.jpg 1x, ./images/img-portfolio-tab-2-2x.jpg 2x"
-                  media="(min-width: 768px)">
+                    srcset="
+                      ./images/img-portfolio-2.jpg    1x,
+                      ./images/img-portfolio-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
                   <source
-                  srcset="./images/img-portfolio-mob-2.jpg 1x, ./images/img-portfolio-mob-2-2x.jpg 2x"
-                  media="(max-width: 767px)"> 
+                    srcset="
+                      ./images/img-portfolio-tab-2.jpg    1x,
+                      ./images/img-portfolio-tab-2-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob-2.jpg    1x,
+                      ./images/img-portfolio-mob-2-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  class="portfolio-image"
-                  src="./images/img-portfolio-2.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/img-portfolio-2.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
                 </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -447,21 +477,33 @@
             <li class="portfolio-item">
               <div class="portfolio-cover">
                 <picture>
-                  <source 
-                  srcset="./images/img-portfolio-3.jpg 1x, ./images/img-portfolio-3-2x.jpg 2x" 
-                  media="(min-width: 1158px)">
                   <source
-                  srcset="./images/img-portfolio-tab-3.jpg 1x, ./images/img-portfolio-tab-3-2x.jpg 2x"
-                  media="(min-width: 768px)">
+                    srcset="
+                      ./images/img-portfolio-3.jpg    1x,
+                      ./images/img-portfolio-3-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
                   <source
-                  srcset="./images/img-portfolio-mob-3.jpg 1x, ./images/img-portfolio-mob-3-2x.jpg 2x"
-                  media="(max-width: 767px)">
+                    srcset="
+                      ./images/img-portfolio-tab-3.jpg    1x,
+                      ./images/img-portfolio-tab-3-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob-3.jpg    1x,
+                      ./images/img-portfolio-mob-3-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  class="portfolio-image"
-                  src="./images/img-portfolio-3.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/img-portfolio-3.jpg"
+                    alt="Meditation App"
+                    width="360"
+                  />
                 </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -477,21 +519,33 @@
             <li class="portfolio-item">
               <div class="portfolio-cover">
                 <picture>
-                  <source 
-                  srcset="./images/img-portfolio-4.jpg 1x, ./images/img-portfolio-4-2x.jpg 2x" 
-                  media="(min-width: 1158px)">
                   <source
-                  srcset="./images/img-portfolio-tab-4.jpg 1x, ./images/img-portfolio-tab-4-2x.jpg 2x"
-                  media="(min-width: 768px)">
+                    srcset="
+                      ./images/img-portfolio-4.jpg    1x,
+                      ./images/img-portfolio-4-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
                   <source
-                  srcset="./images/img-portfolio-mob-4.jpg 1x, ./images/img-portfolio-mob-4-2x.jpg 2x"
-                  media="(max-width: 767px)"> 
+                    srcset="
+                      ./images/img-portfolio-tab-4.jpg    1x,
+                      ./images/img-portfolio-tab-4-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob-4.jpg    1x,
+                      ./images/img-portfolio-mob-4-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  class="portfolio-image"
-                  src="./images/img-portfolio-4.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/img-portfolio-4.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
                 </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -507,21 +561,33 @@
             <li class="portfolio-item">
               <div class="portfolio-cover">
                 <picture>
-                  <source 
-                  srcset="./images/img-portfolio-5.jpg 1x, ./images/img-portfolio-5-2x.jpg 2x" 
-                  media="(min-width: 1158px)">
                   <source
-                  srcset="./images/img-portfolio-tab-5.jpg 1x, ./images/img-portfolio-tab-5-2x.jpg 2x"
-                  media="(min-width: 768px)">
+                    srcset="
+                      ./images/img-portfolio-5.jpg    1x,
+                      ./images/img-portfolio-5-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
                   <source
-                  srcset="./images/img-portfolio-mob-5.jpg 1x, ./images/img-portfolio-mob-5-2x.jpg 2x"
-                  media="(max-width: 767px)">
+                    srcset="
+                      ./images/img-portfolio-tab-5.jpg    1x,
+                      ./images/img-portfolio-tab-5-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob-5.jpg    1x,
+                      ./images/img-portfolio-mob-5-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  class="portfolio-image"
-                  src="./images/img-portfolio-5.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/img-portfolio-5.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
                 </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -537,21 +603,33 @@
             <li class="portfolio-item">
               <div class="portfolio-cover">
                 <picture>
-                  <source 
-                  srcset="./images/img-portfolio-6.jpg 1x, ./images/img-portfolio-6-2x.jpg 2x" 
-                  media="(min-width: 1158px)">
                   <source
-                  srcset="./images/img-portfolio-tab-6.jpg 1x, ./images/img-portfolio-tab-6-2x.jpg 2x"
-                  media="(min-width: 768px)">
+                    srcset="
+                      ./images/img-portfolio-6.jpg    1x,
+                      ./images/img-portfolio-6-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
                   <source
-                  srcset="./images/img-portfolio-mob-6.jpg 1x, ./images/img-portfolio-mob-6-2x.jpg 2x"
-                  media="(max-width: 767px)">
+                    srcset="
+                      ./images/img-portfolio-tab-6.jpg    1x,
+                      ./images/img-portfolio-tab-6-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-mob-6.jpg    1x,
+                      ./images/img-portfolio-mob-6-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
                   <img
-                  class="portfolio-image"
-                  src="./images/img-portfolio-6.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/img-portfolio-6.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
                 </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -707,17 +785,18 @@
             <label for="user-privacy" class="check-text"
               ><span class="check-element"
                 ><svg class="check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-vector"></use></svg></span
-              >
-              <span>I accept the terms and conditions of the
-              <a href="" class="check-element-span"> Privacy Policy</a></span></label
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              <span
+                >I accept the terms and conditions of the
+                <a href="" class="check-element-span"> Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="modal-button btn" type="submit">Send</button>
         </form>
       </div>
     </div>
-  </body>
-</html> 
   </body>
 </html>

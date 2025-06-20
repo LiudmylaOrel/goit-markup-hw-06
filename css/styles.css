@@ -149,6 +149,8 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .mobil-menu-link:hover,
 .mobil-menu-link:focus {
     color: #404bbf;
@@ -174,6 +176,10 @@ img {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-color {
+    color: #404bbf;
 }
 
 .mobil-addres-link:hover,
@@ -224,8 +230,6 @@ img {
     max-width: 216px;
     margin: 0 auto;
     margin-bottom: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 .hero-button {
@@ -822,7 +826,7 @@ textarea::placeholder {
     }
 
     .team .container {
-        max-width: 552px;
+        max-width: 584px;
     }
 
     .header-logo {
@@ -923,7 +927,8 @@ textarea::placeholder {
     
     
     .features-list {
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .features-item {
@@ -995,6 +1000,7 @@ textarea::placeholder {
 
     .footer-input {
         width: 264px;
+        margin-bottom: 0;
     }
 
     .footer-form {
@@ -1020,7 +1026,7 @@ textarea::placeholder {
 
 @media (min-width: 1158px) {
     .container {
-        max-width: 1160px;
+        max-width: 1158px;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -1044,7 +1050,7 @@ textarea::placeholder {
         gap: 40px;
     }
 
-    .header-addres-link {
+    .header-address-link {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02;
@@ -1108,6 +1114,7 @@ textarea::placeholder {
     }
 
     .portfolio-item {
+        box-shadow: none;
         width: calc((100% - 24px * 2) / 3);
         transition-property: box-shadow;
         transition-duration: 250ms;
